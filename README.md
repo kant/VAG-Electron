@@ -14,7 +14,10 @@ Through this cross-platform application, you can perform CRUD operations(bulk) w
 * To put the application in use, do remember to modify the webpack.config.js, remove hot-loader plugins and webpack-related arguments.
 
 ####Build the project
+> git clone https://github.com/Tinysymphony/VAG-Electron.git
 
-> git clone
+> cd VAG-Electron
+
 > npm install
+
 > electron .

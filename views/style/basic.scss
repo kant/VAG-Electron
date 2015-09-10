@@ -14,3 +14,10 @@ ul > li {
 body {
   background-color: $grey !important;
 }
+
+li li {
+  transition: 0.5s;
+  &:hover {
+    background-color: desaturate($main, 20%);
+  }
+}
