@@ -62,7 +62,7 @@ var MainMenu = React.createClass({
           <a className="gn-icon gn-icon-menu"><span>Menu</span></a>
           <ReactMenu projects={this.props.projects}/>
         </li>
-        <li className="tinyLink"><a herf={this.props.homelink}>wytiny</a></li>
+        <li className="tinyLink"><a href={this.props.link}>wytiny</a></li>
         <li className="rightButton"><a>VAG-Electron</a></li>
       </ul>
     );

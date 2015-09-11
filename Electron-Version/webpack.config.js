@@ -1,8 +1,9 @@
 var webpack = require('webpack');
+var path = require('path');
 module.exports = {
   entry: {
     index: [
-      'webpack-dev-server/client?http://127.0.0.1:4000',
+      'webpack-dev-server/client?http://localhost:4000',
       'webpack/hot/only-dev-server',
       './views/index.js'
     ]
@@ -16,7 +17,7 @@ module.exports = {
     loaders: [{
       test: /\.(js|jsx)$/,
       exclude: /node_modules/,
-      loader: 'react-hot!jsx-loader?harmony'
+      loaders: ['react-hot', 'jsx?harmony']
     }, {
       test: /\.css$/,
       loader: 'style-loader!css-loader'

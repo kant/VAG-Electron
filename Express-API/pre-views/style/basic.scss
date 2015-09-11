@@ -13,9 +13,10 @@ ul > li {
 
 body {
   background-color: $grey !important;
+  font-family: 'Lato', 'WenQuanYi Micro Hei Mono';
 }
 
-li li {
+nav li a {
   transition: 0.5s;
   &:hover {
     background-color: desaturate($main, 20%);

@@ -1,0 +1,53 @@
+$back: #414A59;
+$main: #F76663;
+$grey: #D9D9D9;
+$white: #FFFFFF;
+
+@mixin roundBorder($radius: 5px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: $grey !important;
+  div, a, p, h1, h2, h3, h4, pre, span, header, footer, section, article, blockquote{
+    font-family: 'Lato', Arial, sans-serif, 'WenQuanYi Micro Hei Mono', 'Microsoft YaHei';
+  }
+}
+
+section {
+  @include roundBorder();
+}
+
+nav li a {
+  transition: 0.5s;
+  &:hover {
+    background-color: lighten($back, 20%);
+    color: $white;
+  }
+}
+
+#gn-menu a.focus {
+  color: $white;
+  background: $main;
+}
+
+#Dashboard {
+  margin-top: 80px;
+}
+
+section.sec {
+  margin: 20px;
+  height: 130px;
+  background-color: $back;
+
+}
